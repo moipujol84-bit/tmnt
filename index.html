@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tortugas de Tierra - Información y Cuidados</title>
+    <meta name="description" content="Guía completa sobre tortugas de tierra: características, hábitat, alimentación, cuidados y conservación. Descubre cómo proteger estas fascinantes criaturas y sus ecosistemas.">
+    
+    <!-- Meta tags para SEO y accesibilidad -->
+    <meta name="theme-color" content="#1b5e20">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Preconexión para recursos externos -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="preconnect" href="https://media.istockphoto.com">
+    
+    <!-- Preload de fuentes críticas -->
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D92YHZEKD7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-D92YHZEKD7');
+</script>
+    
+    <!-- CSS optimizado y crítico -->
+    <style>
+        /* ===== VARIABLES Y ESTILOS BASE ===== */
+        :root {
+            --primary-color: #2e7d32;
+            --primary-light: #c8e6c9;
+            --dark-green: #1b5e20;
+            --accent-color: #8db596;
+            --light-accent: #7aa382;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* ===== MEJORAS DE ACCESIBILIDAD ===== */
+        /* Mejorar contraste para cumplir WCAG AA */
+        .text-muted {
+            color: #6c757d !important; /* Mejor contraste */
+        }
+        
+        .navbar-dark .navbar-nav .nav-link {
+            color: rgba(255, 255, 255, 0.9) !important;
+        }
+        
+        .navbar-dark .navbar-nav .nav-link:hover {
+            color: #fff !important;
+        }
+        
+        /* Mejorar contraste en botones */
+        .btn-warning {
+            color: #000 !important; /* Texto oscuro sobre fondo amarillo */
+        }
+
+        /* ===== COMPONENTE ACORDEÓN ===== */
+        .acordeon {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .seccion {
+            border-bottom: 1px solid #ddd;
+        }
+
+        .seccion:last-child {
+            border-bottom: none;
+        }
+
+        .encabezado {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 15px 20px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: background-color 0.3s;
+            border: none;
+            width: 100%;
+            text-align: left;
+        }
+
+        .encabezado:hover {
+            background-color: var(--light-accent);
+        }
+
+        .encabezado::after {
+            content: '+';
+            font-size: 24px;
+            transition: transform 0.3s;
+        }
+
+        .seccion.activa .encabezado::after {
+            transform: rotate(45deg);
+        }
+
+        .contenido {
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+            padding: 0 20px;
+        }
+
+        .seccion.activa .contenido {
+            max-height: 1000px;
+            padding: 20px;
+        }
+
+        /* ===== TIPOGRAFÍA Y ELEMENTOS DE CONTENIDO ===== */
+        h1 {
+            text-align: center;
+            color: var(--dark-green);
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        h2 {
+            color: var(--dark-green);
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .imagen-tortuga {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+            margin: 15px auto;
+            display: block;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .nota {
+            font-style: italic;
+            color: #666;
+            border-left: 3px solid var(--accent-color);
+            padding-left: 10px;
+            margin: 15px 0;
+        }
+
+        /* ===== COMPONENTES DE NAVEGACIÓN ===== */
+        .navbar {
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        /* ===== SECCIONES ESPECIALES ===== */
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                        url('https://images.unsplash.com/photo-1478759964935-dd04a42105a1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1074');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+        }
+
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            color: var(--primary-color);
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 3px;
+            background-color: var(--primary-color);
+            margin: 15px auto 0;
+        }
+
+        /* ===== COMPONENTES DE TARJETAS ===== */
+        .custom-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+        }
+
+        .custom-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+            width: 100%; /* Evitar cambios de diseño */
+        }
+
+        /* ===== COMPONENTES DE FORMULARIO Y CONTACTO ===== */
+        .contacto-section {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 20px 0;
+        }
+
+        .contacto-title {
+            color: var(--dark-green);
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+
+        .contacto-boton {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 24px;
+            margin: 8px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .btn-tel {
+            background: #4CAF50;
+            color: white;
+            border: 2px solid #4CAF50;
+        }
+
+        .btn-tel:hover {
+            background: #45a049;
+            border-color: #45a049;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+            color: white;
+        }
+
+        .btn-mail {
+            background: #ff9800;
+            color: white;
+            border: 2px solid #ff9800;
+        }
+
+        .btn-mail:hover {
+            background: #e68900;
+            border-color: #e68900;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(255, 152, 0, 0.3);
+            color: white;
+        }
+
+        .contacto-info {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .contacto-icon {
+            font-size: 1.2rem;
+        }
+
+        /* ===== COMPONENTES DE DONACIONES ===== */
+        .donaciones-section {
+            background: linear-gradient(135deg, var(--dark-green) 0%, var(--primary-color) 100%);
+            color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .donacion-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 2px solid transparent;
+        }
+
+        .donacion-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .donacion-card.active {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: #FFD54F;
+        }
+
+        .btn-donar {
+            background: #FFD54F;
+            color: var(--dark-green);
+            font-weight: 600;
+            padding: 12px 30px;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-donar:hover {
+            background: #FFC107;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 213, 79, 0.4);
+        }
+
+        .confirmacion-donacion {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 15px;
+            padding: 40px;
+            text-align: center;
+            color: var(--dark-green);
+            margin-top: 30px;
+            display: none;
+        }
+
+        .icono-confirmacion {
+            font-size: 4rem;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        /* ===== FOOTER ===== */
+        .custom-footer {
+            background-color: var(--dark-green);
+        }
+
+        .footer-link {
+            color: var(--primary-light);
+            text-decoration: none;
+        }
+
+        .footer-link:hover {
+            color: white;
+            text-decoration: underline;
+        }
+                
+        /* Animación para el scroll automático */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Estilos para el estado de carga */
+        .btn-loading {
+            position: relative;
+            color: transparent !important;
+        }
+        
+        .btn-loading::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            border: 2px solid transparent;
+            border-top-color: var(--dark-green);
+            border-radius: 50%;
+            animation: button-loading-spinner 1s ease infinite;
+        }
+        
+        @keyframes button-loading-spinner {
+            from {
+                transform: rotate(0turn);
+            }
+            to {
+                transform: rotate(1turn);
+            }
+        }
+        
+        /* Mejoras de rendimiento */
+        .lazy {
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        
+        .lazy.loaded {
+            opacity: 1;
+        }
+        
+        /* Mejoras de accesibilidad para enfoque */
+        .encabezado:focus, 
+        .btn:focus,
+        .form-control:focus,
+        .form-select:focus {
+            outline: 2px solid #FFD54F;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio">
+                <i class="bi bi-tree-fill me-2" aria-hidden="true"></i>Tortugas de Tierra
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habitat">Hábitat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#alimentacion">Alimentación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#caracteristicas">Características</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#carousel">Galería</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#donaciones">Donaciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section d-flex align-items-center" id="inicio">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-4">Descubre el Mundo de las Tortugas de Tierra</h1>
+            <p class="lead mb-4">Conoce todo sobre estas fascinantes criaturas: su hábitat, alimentación y características principales.</p>
+            <a href="#habitat" class="btn btn-success btn-lg me-2">
+                <i class="bi bi-info-circle me-1" aria-hidden="true"></i>Conocer más
+            </a>
+            <button class="btn btn-warning btn-lg" data-bs-toggle="modal" data-bs-target="#modalAgradecimiento">
+                <i class="bi bi-heart-fill me-1" aria-hidden="true"></i>Apoyar nuestra causa
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCIÓN HÁBITAT -->
+    <section class="section-padding bg-dark" id="habitat">
+        <div class="container">
+            <h2 class="section-title text-center text-white">Hábitat de las Tortugas de Tierra</h2>
+            
+            <div class="row g-4">
+                <!-- Tarjeta 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card custom-card h-100 shadow-sm">
+                        <img src="https://media.istockphoto.com/id/2179811988/es/foto/nature.jpg?s=2048x2048&w=is&k=20&c=q1AyalyGLZ85sdQoaqyewBiUPFdAy-aurhBQnSgIPes=" 
+                             class="card-img-top lazy" alt="Bosques donde habitan tortugas terrestres" width="300" height="200" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title text-success h5">Bosques</h3>
+                            <p class="card-text flex-grow-1">Muchas especies de tortugas terrestres habitan en bosques donde encuentran refugio y alimento.</p>
+                            <span class="badge bg-success mt-auto">Hábitat común</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tarjeta 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card custom-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1508873696983-2dfd5898f08b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                             class="card-img-top lazy" alt="Praderas abiertas, hábitat de tortugas" width="300" height="200" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title text-success h5">Praderas</h3>
+                            <p class="card-text flex-grow-1">Las praderas abiertas son el hogar de diversas especies de tortugas terrestres.</p>
+                            <span class="badge bg-success mt-auto">Hábitat común</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tarjeta 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card custom-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                             class="card-img-top lazy" alt="Desiertos donde viven tortugas adaptadas" width="300" height="200" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title text-success h5">Desiertos</h3>
+                            <p class="card-text flex-grow-1">Algunas tortugas se han adaptado a vivir en ambientes desérticos áridos.</p>
+                            <span class="badge bg-warning mt-auto">Hábitat especializado</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tarjeta 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card custom-card h-100 shadow-sm">
+                        <img src="https://media.istockphoto.com/id/177145956/es/foto/african-savannah-en-kenia.jpg?s=2048x2048&w=is&k=20&c=NZAy_21DaDD5hAqplUHygCCIP5FJeIF_p6obR50ThSU=" 
+                             class="card-img-top lazy" alt="Sabanas, entorno ideal para tortugas" width="300" height="200" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title text-success h5">Sabanas</h3>
+                            <p class="card-text flex-grow-1">Las sabanas ofrecen un entorno ideal para muchas especies de tortugas terrestres.</p>
+                            <span class="badge bg-success mt-auto">Hábitat común</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACORDEÓN INFORMATIVO -->
+    <section class="section-padding">
+        <div class="container">
+            <h1 class="text-center mb-5">Tortugas de Tierra: Guía Completa</h1>
+            
+            <div class="acordeon">
+                <div class="seccion">
+                    <button class="encabezado" aria-expanded="false" aria-controls="contenido1">Características y Hábitat</button>
+                    <div class="contenido" id="contenido1">
+                        <h2>Características Físicas</h2>
+                        <p>Las tortugas terrestres son reptiles caracterizados por su caparazón protector, que forma parte de su esqueleto. Este caparazón está compuesto de placas óseas fusionadas con las costillas y la columna vertebral.</p>
+                        
+                        <p>Existen numerosas especies de tortugas terrestres, que varían considerablemente en tamaño. Algunas, como la tortuga mediterránea, miden apenas 15-20 cm, mientras que las tortugas gigantes de las Galápagos pueden superar el metro de longitud y pesar más de 200 kg.</p>
+                        
+                        <h2>Hábitat Natural</h2>
+                        <p>Las tortugas terrestres habitan en diversos ecosistemas alrededor del mundo:</p>
+                        <ul>
+                            <li>Bosques mediterráneos</li>
+                            <li>Sabanas y pastizales</li>
+                            <li>Zonas desérticas y semiáridas</li>
+                            <li>Islas oceánicas</li>
+                        </ul>
+                        
+                        <p>Su distribución geográfica es amplia, encontrándose especies en Europa, África, Asia y América. Las tortugas terrestres son animales ectotérmicos, lo que significa que dependen de fuentes externas para regular su temperatura corporal.</p>
+                        
+                        <div class="nota">
+                            Las tortugas terrestres tienen una esperanza de vida excepcionalmente larga, pudiendo vivir entre 50 y 150 años dependiendo de la especie.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="seccion">
+                    <button class="encabezado" aria-expanded="false" aria-controls="contenido2">Alimentación y Cuidados</button>
+                    <div class="contenido" id="contenido2">
+                        <h2>Dieta en la Naturaleza</h2>
+                        <p>La mayoría de las tortugas terrestres son herbívoras, aunque algunas especies son omnívoras. Su dieta natural incluye:</p>
+                        <ul>
+                            <li>Hojas verdes y hierbas</li>
+                            <li>Flores y pétalos</li>
+                            <li>Frutas silvestres</li>
+                            <li>Algunas especies consumen caracoles e insectos</li>
+                        </ul>
+                        
+                        <h2>Cuidados en Cautiverio</h2>
+                        <p>Si decides tener una tortuga terrestre como mascota, es fundamental proporcionarle:</p>
+                        <ul>
+                            <li>Un terrario espacioso con sustrato adecuado</li>
+                            <li>Zonas con diferentes temperaturas (punto caliente y fresco)</li>
+                            <li>Iluminación UVB para el metabolismo del calcio</li>
+                            <li>Dieta variada rica en fibra y calcio</li>
+                            <li>Acceso a agua fresca en todo momento</li>
+                        </ul>
+                        
+                        <p>La alimentación debe ser principalmente vegetariana, con un 90% de verduras de hoja verde (como escarola, endibia, diente de león) y un 10% de frutas. Es importante evitar alimentos como lechuga iceberg, que tiene poco valor nutricional.</p>
+                        
+                        <div class="nota">
+                            Las tortugas terrestres necesitan exposición regular a luz UVB para sintetizar vitamina D3, esencial para absorber el calcio y mantener un caparazón saludable.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="seccion">
+                    <button class="encabezado" aria-expanded="false" aria-controls="contenido3">Reproducción y Conservación</button>
+                    <div class="contenido" id="contenido3">
+                        <h2>Ciclo Reproductivo</h2>
+                        <p>Las tortugas terrestres alcanzan la madurez sexual entre los 5 y 20 años, dependiendo de la especie. El cortejo puede incluir comportamientos como:</p>
+                        <ul>
+                            <li>Persecuciones</li>
+                            <li>Golpes con el caparazón</li>
+                            <li>Mordiscos suaves en las patas</li>
+                        </ul>
+                        
+                        <p>Tras la cópula, la hembra excava un nido en tierra blanda donde deposita sus huevos. El número de huevos varía según la especie, desde 1-2 hasta más de 20. El período de incubación dura entre 2 y 4 meses, dependiendo de la temperatura ambiental.</p>
+                        
+                        <h2>Estado de Conservación</h2>
+                        <p>Muchas especies de tortugas terrestres enfrentan graves amenazas:</p>
+                        <ul>
+                            <li>Pérdida y fragmentación de hábitat</li>
+                            <li>Tráfico ilegal como mascotas</li>
+                            <li>Depredación por especies introducidas</li>
+                            <li>Cambio climático</li>
+                        </ul>
+                        
+                        <p>Numerosas especies están protegidas por convenios internacionales como CITES (Convención sobre el Comercio Internacional de Especies Amenazadas de Fauna y Flora Silvestres). Es fundamental adquirir tortugas solo de criadores autorizados y nunca extraer ejemplares de su hábitat natural.</p>
+                        
+                        <div class="nota">
+                            La temperatura de incubación determina el sexo de las crías en muchas especies de tortugas: temperaturas más altas producen hembras, mientras que temperaturas más bajas producen machos.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN ALIMENTACIÓN -->
+    <section class="section-padding" id="alimentacion">
+        <div class="container">
+            <h2 class="section-title text-center">Alimentación de las Tortugas de Tierra</h2>
+            
+            <div class="row g-4">
+                <!-- Tarjeta 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card custom-card h-100 shadow-sm">
+                        <img src="https://media.istockphoto.com/id/2176797227/es/foto/un-colorido-y-vibrante-surtido-de-frutas-y-verduras-frescas-en-una-hermosa-canasta.jpg?s=2048x2048&w=is&k=20&c=0gTrZmPlsyxHBJRk-05D_Q0AoYjMomftGkTFfSKXNOU=" 
+                             class="card-img-top lazy" alt="Variedad de vegetales para tortugas" width="300" height="200" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title text-success h5">Vegetales</h3>
+                            <p class="card-text flex-grow-1">Las tortugas terrestres son principalmente herbívoras y consumen una gran variedad de vegetales.</p>
+                            <div class="mt-auto">
+                                <small class="text-muted">Frecuencia en dieta:</small>
+                                <div class="progress mt-1">
+                                    <div class="progress-bar bg-success" style="width: 70%">70%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tarjeta 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card custom-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1560493676-04071c5f467b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                             class="card-img-top lazy" alt="Frutas para tortugas terrestres" width="300" height="200" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title text-success h5">Frutas</h3>
+                            <p class="card-text flex-grow-1">Las frutas son una parte importante de la dieta de muchas especies de tortugas terrestres.</p>
+                            <div class="mt-auto">
+                                <small class="text-muted">Frecuencia en dieta:</small>
+                                <div class="progress mt-1">
+                                    <div class="progress-bar bg-success" style="width: 20%">20%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tarjeta 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card custom-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                             class="card-img-top lazy" alt="Flores en la dieta de tortugas" width="300" height="200" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title text-success h5">Flores</h3>
+                            <p class="card-text flex-grow-1">Algunas tortugas terrestres complementan su dieta con flores y pétalos.</p>
+                            <div class="mt-auto">
+                                <small class="text-muted">Frecuencia en dieta:</small>
+                                <div class="progress mt-1">
+                                    <div class="progress-bar bg-success" style="width: 5%">5%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tarjeta 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card custom-card h-100 shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1574856344991-aaa31b6f4ce3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" 
+                             class="card-img-top lazy" alt="Suplementos para tortugas en cautiverio" width="300" height="200" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title text-success h5">Suplementos</h3>
+                            <p class="card-text flex-grow-1">En cautiverio, es importante complementar su dieta con calcio y vitaminas.</p>
+                            <div class="mt-auto">
+                                <small class="text-muted">Frecuencia en dieta:</small>
+                                <div class="progress mt-1">
+                                    <div class="progress-bar bg-info" style="width: 5%">5%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CARACTERÍSTICAS PRINCIPALES -->
+    <section class="section-padding bg-dark" id="caracteristicas">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-6 mx-auto text-center">
+                    <img class="bg-light rounded-circle img-fluid lazy" src="https://www.ionlitio.com/images/2007/02/tmnt.jpg" alt="Ilustración de tortuga" width="300" height="300" loading="lazy">
+                </div>
+            </div>
+            <h2 class="section-title text-center text-white">Características Principales</h2>
+            
+            <div class="row g-4">
+                <!-- Tarjeta 1 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card custom-card h-100 shadow-sm">
+                        <img src="https://plus.unsplash.com/premium_photo-1674278926633-5c6751696eb2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170" 
+                             class="card-img-top lazy" alt="Caparazón de tortuga terrestre" width="300" height="200" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title text-success h5">Caparazón Protector</h3>
+                            <p class="card-text flex-grow-1">Su característica más distintiva es el caparazón que protege sus órganos internos.</p>
+                            <ul class="list-group list-group-flush mt-auto">
+                                <li class="list-group-item small">Protección contra depredadores</li>
+                                <li class="list-group-item small">Regulación térmica</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tarjeta 2 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card custom-card h-100 shadow-sm">
+                        <img src="https://media.cnn.com/api/v1/images/stellar/prod/220126130411-03-oldest-tortoise-jonathan-scli-intl.jpg?q=w_1160,c_fill/f_webp" 
+                             class="card-img-top lazy" alt="Tortuga longeva, Jonathan" width="300" height="200" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title text-success h5">Gran Longevidad</h3>
+                            <p class="card-text flex-grow-1">Las tortugas terrestres son conocidas por su larga vida, pudiendo vivir décadas o incluso más de un siglo.</p>
+                            <ul class="list-group list-group-flush mt-auto">
+                                <li class="list-group-item small">Algunas especies viven 100+ años</li>
+                                <li class="list-group-item small">Crecimiento continuo durante toda la vida</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tarjeta 3 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card custom-card h-100 shadow-sm">
+                        <img src="https://ars.els-cdn.com/content/image/1-s2.0-S1532045624000516-ga1.jpg" 
+                             class="card-img-top lazy" alt="Metabolismo lento de las tortugas" width="300" height="200" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title text-success h5">Metabolismo Lento</h3>
+                            <p class="card-text flex-grow-1">Tienen un metabolismo muy lento que contribuye a su longevidad.</p>
+                            <ul class="list-group list-group-flush mt-auto">
+                                <li class="list-group-item small">Bajas necesidades energéticas</li>
+                                <li class="list-group-item small">Capacidad de sobrevivir largos periodos sin comida</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tarjeta 4 -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card custom-card h-100 shadow-sm">
+                        <img src="https://media.istockphoto.com/id/160810708/es/foto/tortuga-gigante-de-gal%C3%A1pagos.jpg?s=2048x2048&w=is&k=20&c=FIsOI7wOESvFluZ75N9-LT1tiXTSRsk5yqku2qa21ZI=" 
+                             class="card-img-top lazy" alt="Tortuga en estado de hibernación" width="300" height="200" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title text-success h5">Hibernación</h3>
+                            <p class="card-text flex-grow-1">Muchas especies hibernan durante los meses más fríos del año.</p>
+                            <ul class="list-group list-group-flush mt-auto">
+                                <li class="list-group-item small">Reducción del metabolismo</li>
+                                <li class="list-group-item small">Supervivencia en climas fríos</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="section-padding bg-success" id="carousel">
+        <div class="container">
+            <h2 class="section-title text-center text-white">Galería de Tortugas</h2>
+            
+            <div id="carouselTortugas" class="carousel slide" data-bs-ride="carousel">
+                <!-- Indicadores -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselTortugas" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselTortugas" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselTortugas" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselTortugas" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselTortugas" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                
+                <!-- Slides -->
+                <div class="carousel-inner rounded">
+                    <div class="carousel-item active">
+                        <img src="https://images.unsplash.com/photo-1648059567553-fd73e4dfda46?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1470" alt="Tortuga en su hábitat natural" class="d-block w-100 lazy" style="max-height: 500px; object-fit: cover;" loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1659818112059-7fbb104d0f1b?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1889" alt="Tortuga comiendo vegetación" class="d-block w-100 lazy" style="max-height: 500px; object-fit: cover;" loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1716265871248-8eca3ed0d3be?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1471" alt="Tortuga caminando por el campo" class="d-block w-100 lazy" style="max-height: 500px; object-fit: cover;" loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1613142007379-7a4571c12d26?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1470" alt="Tortuga en primer plano mostrando su caparazón" class="d-block w-100 lazy" style="max-height: 500px; object-fit: cover;" loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images.unsplash.com/photo-1613142007386-6e5aabd52b68?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1470" alt="Grupo de tortugas en su entorno" class="d-block w-100 lazy" style="max-height: 500px; object-fit: cover;" loading="lazy">
+                    </div>
+                </div>
+                
+                <!-- Controles -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselTortugas" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselTortugas" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE DONACIONES -->
+    <section class="section-padding" id="donaciones">
+        <div class="container">
+            <h2 class="section-title text-center">Apoya Nuestra Causa</h2>
+            <p class="text-center mb-5">Tu contribución ayuda a proteger a las tortugas terrestres y sus hábitats. Elige la cantidad que deseas donar:</p>
+            
+            <div class="donaciones-section p-5">
+                <div class="row g-4">
+                    <div class="col-md-10 mx-auto">
+                        <div class="row g-3 text-center mb-4">
+                            <!-- Opciones de donación -->
+                            <div class="col-md-4">
+                                <div class="donacion-card p-4" data-monto="10">
+                                    <h4 class="fw-bold">10€</h4>
+                                    <p class="mb-0">Alimentación para una tortuga durante 1 mes</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="donacion-card p-4 active" data-monto="25">
+                                    <h4 class="fw-bold">25€</h4>
+                                    <p class="mb-0">Cuidados veterinarios básicos</p>
+                                    <span class="badge bg-warning text-dark mt-2">Más popular</span>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="donacion-card p-4" data-monto="50">
+                                    <h4 class="fw-bold">50€</h4>
+                                    <p class="mb-0">Contribuye a la conservación de hábitats</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Formulario de donación -->
+                        <form id="formularioDonacion" action="https://formspree.io/f/movnoggn" method="POST">
+                            <!-- Campo oculto para el monto seleccionado -->
+                            <input type="hidden" id="montoFinal" name="monto" value="25">
+                            
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-6">
+                                    <label for="montoPersonalizado" class="form-label text-white">Cantidad (€)</label>
+                                    <input type="number" class="form-control" id="montoPersonalizado" min="1" placeholder="Ej: 35" aria-describedby="ayudaMonto">
+                                    <div id="ayudaMonto" class="form-text text-white-50">Introduce cualquier cantidad que desees donar</div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="tipoDonacion" class="form-label text-white">Tipo de donación</label>
+                                    <select class="form-select" id="tipoDonacion" name="tipo_donacion">
+                                        <option value="unica">Donación única</option>
+                                        <option value="mensual">Donación mensual</option>
+                                        <option value="trimestral">Donación trimestral</option>
+                                        <option value="anual">Donación anual</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <!-- Campos de información personal -->
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-6">
+                                    <label for="nombreCompleto" class="form-label text-white">Nombre completo *</label>
+                                    <input type="text" class="form-control" id="nombreCompleto" name="nombre" placeholder="Ingresa tu nombre completo" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="correoElectronico" class="form-label text-white">Correo electrónico *</label>
+                                    <input type="email" class="form-control" id="correoElectronico" name="email" placeholder="ejemplo@correo.com" required>
+                                </div>
+                            </div>
+                            
+                            <!-- Campo de mensaje y términos -->
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <label for="mensajeDonacion" class="form-label text-white">Mensaje (opcional)</label>
+                                    <textarea class="form-control" id="mensajeDonacion" name="mensaje" rows="3" placeholder="¿Por qué decides apoyarnos?"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="terminosCondiciones" required>
+                                        <label class="form-check-label text-white" for="terminosCondiciones">
+                                            Acepto los <a href="#" class="text-warning">términos y condiciones</a> y la <a href="#" class="text-warning">política de privacidad</a>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="text-center mt-4">
+                                <button type="submit" class="btn btn-warning btn-lg btn-donar" id="botonDonar">
+                                    <i class="bi bi-heart-fill me-2" aria-hidden="true"></i>Realizar Donación
+                                </button>
+                            </div>
+                        </form>
+
+                        <!-- Confirmación de donación -->
+                        <div class="confirmacion-donacion" id="confirmacionDonacion">
+                            <div class="icono-confirmacion">
+                                <i class="bi bi-heart-fill" aria-hidden="true"></i>
+                            </div>
+                            <h3>¡Gracias por ayudarnos!</h3>
+                            <p class="mt-3">Tu apoyo es fundamental para continuar con nuestra labor de protección de las tortugas terrestres.</p>
+                            <button type="button" class="btn btn-success mt-3" onclick="ocultarConfirmacion()">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-md-10 mx-auto">
+                    <div class="row text-center">
+                        <div class="col-md-4">
+                            <div class="p-3">
+                                <i class="bi bi-shield-check display-4 text-success" aria-hidden="true"></i>
+                                <h5 class="mt-3">Donaciones Seguras</h5>
+                                <p class="text-muted">Todas las transacciones están protegidas con encriptación SSL</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="p-3">
+                                <i class="bi bi-graph-up display-4 text-success" aria-hidden="true"></i>
+                                <h5 class="mt-3">Transparencia Total</h5>
+                                <p class="text-muted">Publicamos informes anuales sobre el uso de los fondos</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="p-3">
+                                <i class="bi bi-award display-4 text-success" aria-hidden="true"></i>
+                                <h5 class="mt-3">Organización Certificada</h5>
+                                <p class="text-muted">Somos una organización sin ánimo de lucro registrada</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE CONTACTO -->
+    <section class="section-padding" id="contacto">
+        <div class="container">
+            <h2 class="section-title text-center">Contacto</h2>
+            
+            <div class="contacto-section">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h3 class="contacto-title">¿Tienes preguntas sobre tortugas?</h3>
+                        <p class="mb-4">Estamos aquí para ayudarte. Contáctanos para obtener más información sobre el cuidado de tortugas terrestres, sus hábitats o cualquier consulta relacionada.</p>
+                        
+                        <div class="contacto-info">
+                            <h5 class="mb-3">Información de contacto</h5>
+                            <p><i class="bi bi-clock contacto-icon text-success me-2" aria-hidden="true"></i> Horario de atención: Lunes a Viernes, 9:00 - 18:00</p>
+                            <p><i class="bi bi-geo-alt contacto-icon text-success me-2" aria-hidden="true"></i> Dirección: Calle Naturaleza, 123 - Ciudad Verde</p>
+                            <p><i class="bi bi-telephone contacto-icon text-success me-2" aria-hidden="true"></i> Teléfono: <a href="tel:+34123456789" class="text-decoration-none">+34 123 456 789</a></p>
+                            <p><i class="bi bi-envelope contacto-icon text-success me-2" aria-hidden="true"></i> Email: <a href="mailto:info@tortugastierra.com" class="text-decoration-none">info@tortugastierra.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6 text-center">
+                        <div class="mb-4">
+                            <h4 class="mb-3">Contáctanos directamente</h4>
+                            <a href="tel:+34123456789" class="contacto-boton btn-tel">
+                                <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+                                Llamar ahora
+                            </a>
+                            <a href="mailto:info@tortugastierra.com?subject=Consulta%20sobre%20tortugas&body=Hola,%20me%20gustaría%20obtener%20información%20sobre..." 
+                               class="contacto-boton btn-mail">
+                                <i class="bi bi-envelope-fill" aria-hidden="true"></i>
+                                Enviar email
+                            </a>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <h5 class="mb-3">Síguenos en redes sociales</h5>
+                            <div class="d-flex justify-content-center gap-3">
+                                <a href="#" class="btn btn-outline-success rounded-circle p-2" aria-label="Facebook">
+                                    <i class="bi bi-facebook" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-success rounded-circle p-2" aria-label="Twitter">
+                                    <i class="bi bi-twitter" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-success rounded-circle p-2" aria-label="Instagram">
+                                    <i class="bi bi-instagram" aria-hidden="true"></i>
+                                </a>
+                                <a href="#" class="btn btn-outline-success rounded-circle p-2" aria-label="YouTube">
+                                    <i class="bi bi-youtube" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="custom-footer text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="mb-3">
+                        <i class="bi bi-tree-fill me-2" aria-hidden="true"></i>Sobre las Tortugas de Tierra
+                    </h5>
+                    <p>Las tortugas terrestres son reptiles fascinantes que han existido por millones de años. Son animales longevos y pacíficos que merecen nuestro respeto y protección.</p>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <h5 class="mb-3">Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#inicio" class="footer-link">
+                                <i class="bi bi-chevron-right me-1" aria-hidden="true"></i>Inicio
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#habitat" class="footer-link">
+                                <i class="bi bi-chevron-right me-1" aria-hidden="true"></i>Hábitat
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#alimentacion" class="footer-link">
+                                <i class="bi bi-chevron-right me-1" aria-hidden="true"></i>Alimentación
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#caracteristicas" class="footer-link">
+                                <i class="bi bi-chevron-right me-1" aria-hidden="true"></i>Características
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#donaciones" class="footer-link">
+                                <i class="bi bi-chevron-right me-1" aria-hidden="true"></i>Donaciones
+                            </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#contacto" class="footer-link">
+                                <i class="bi bi-chevron-right me-1" aria-hidden="true"></i>Contacto
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 col-md-12">
+                    <h5 class="mb-3">Nuestra Misión</h5>
+                    <p>Promover la conservación y el cuidado responsable de las tortugas terrestres a través de la educación y la divulgación científica.</p>
+                    <div class="mt-4 text-center">
+                        <img class="rounded-circle mx-auto d-block img-fluid lazy" width="150" height="150" src="https://album.mediaset.es/eimg/2017/09/23/CY5dfs5oywKoPhMpEOlN17.jpg?w=1024" alt="Frank de Tortugas Ninja" loading="lazy">
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="mt-4 mb-3">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2023 Tortugas de Tierra. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal de Agradecimiento -->
+    <div class="modal fade" id="modalAgradecimiento" tabindex="-1" aria-labelledby="modalAgradecimientoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center p-5">
+                    <div class="icono-confirmacion">
+                        <i class="bi bi-heart-fill" aria-hidden="true"></i>
+                    </div>
+                    <h3 id="modalAgradecimientoLabel">¡Gracias por tu interés!</h3>
+                    <p class="mt-3">Tu apoyo es fundamental para continuar con nuestra labor de protección de las tortugas terrestres.</p>
+                    <button type="button" class="btn btn-success mt-3" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle con Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- JavaScript optimizado -->
+    <script>
+        // Cargar imágenes de forma diferida
+        document.addEventListener('DOMContentLoaded', function() {
+            // Lazy loading para imágenes
+            const lazyImages = document.querySelectorAll('img.lazy');
+            
+            if ('IntersectionObserver' in window) {
+                const imageObserver = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const img = entry.target;
+                            // Usar dataset.src si está disponible, de lo contrario usar src normal
+                            const src = img.dataset.src || img.src;
+                            img.src = src;
+                            img.classList.add('loaded');
+                            imageObserver.unobserve(img);
+                        }
+                    });
+                }, {
+                    rootMargin: '50px 0px', // Cargar imágenes 50px antes de que entren en la vista
+                    threshold: 0.1
+                });
+                
+                lazyImages.forEach(img => {
+                    // Guardar el src original en dataset para no perderlo
+                    if (!img.dataset.src) {
+                        img.dataset.src = img.src;
+                    }
+                    // Establecer un placeholder pequeño o vacío
+                    img.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='" + (img.width || 300) + "' height='" + (img.height || 200) + "' viewBox='0 0 300 200'%3E%3Crect width='300' height='200' fill='%23f0f0f0'/%3E%3C/svg%3E";
+                    imageObserver.observe(img);
+                });
+            } else {
+                // Fallback para navegadores antiguos
+                lazyImages.forEach(img => {
+                    img.src = img.dataset.src || img.src;
+                    img.classList.add('loaded');
+                });
+            }
+            
+            // Script para manejar las donaciones
+            let montoSeleccionado = 25;
+            let tipoDonacion = 'unica';
+            
+            // Selección de monto predefinido
+            const cardsDonacion = document.querySelectorAll('.donacion-card');
+            cardsDonacion.forEach(card => {
+                card.addEventListener('click', function() {
+                    cardsDonacion.forEach(c => c.classList.remove('active'));
+                    this.classList.add('active');
+                    montoSeleccionado = parseInt(this.getAttribute('data-monto'));
+                    document.getElementById('montoFinal').value = montoSeleccionado;
+                    document.getElementById('montoPersonalizado').value = '';
+                });
+                
+                // Mejora de accesibilidad: permitir selección con teclado
+                card.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        this.click();
+                    }
+                });
+                
+                // Hacer las tarjetas enfocables
+                card.setAttribute('tabindex', '0');
+            });
+            
+            // Actualizar monto desde el campo personalizado
+            document.getElementById('montoPersonalizado').addEventListener('input', function() {
+                if (this.value) {
+                    cardsDonacion.forEach(c => c.classList.remove('active'));
+                    montoSeleccionado = parseInt(this.value);
+                    document.getElementById('montoFinal').value = montoSeleccionado;
+                }
+            });
+            
+            // Actualizar tipo de donación
+            document.getElementById('tipoDonacion').addEventListener('change', function() {
+                tipoDonacion = this.value;
+            });
+            
+            // Navegación automática al cerrar el modal
+            const modalAgradecimiento = document.getElementById('modalAgradecimiento');
+            if (modalAgradecimiento) {
+                modalAgradecimiento.addEventListener('hidden.bs.modal', function () {
+                    // Navegar a la sección de donaciones
+                    setTimeout(function() {
+                        const donacionesSection = document.getElementById('donaciones');
+                        if (donacionesSection) {
+                            donacionesSection.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }, 300);
+                });
+            }
+
+            // Event listener para el submit del formulario
+            const formularioDonacion = document.getElementById('formularioDonacion');
+            if (formularioDonacion) {
+                formularioDonacion.addEventListener('submit', function(e) {
+                    // Validar términos y condiciones
+                    if (!document.getElementById('terminosCondiciones').checked) {
+                        alert('Por favor, acepta los términos y condiciones para continuar.');
+                        e.preventDefault();
+                        return;
+                    }
+                    
+                    // Validar campos obligatorios
+                    const nombre = document.getElementById('nombreCompleto').value;
+                    const email = document.getElementById('correoElectronico').value;
+                    
+                    if (!nombre || !email) {
+                        alert('Por favor, completa todos los campos obligatorios.');
+                        e.preventDefault();
+                        return;
+                    }
+                    
+                    // Validar monto
+                    const montoFinal = document.getElementById('montoFinal').value;
+                    if (!montoFinal || montoFinal < 1) {
+                        alert('Por favor, selecciona un monto válido para la donación.');
+                        e.preventDefault();
+                        return;
+                    }
+                    
+                    // Validar formato de email
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (!emailRegex.test(email)) {
+                        alert('Por favor, introduce un correo electrónico válido.');
+                        e.preventDefault();
+                        return;
+                    }
+                    
+                    // Mostrar estado de carga
+                    const botonDonar = document.getElementById('botonDonar');
+                    if (botonDonar) {
+                        const textoOriginal = botonDonar.innerHTML;
+                        
+                        botonDonar.classList.add('btn-loading');
+                        botonDonar.disabled = true;
+                        botonDonar.setAttribute('aria-label', 'Procesando donación');
+                        
+                        // Simular procesamiento antes de mostrar confirmación
+                        setTimeout(function() {
+                            mostrarConfirmacion();
+                        }, 1500);
+                    }
+                    
+                    // Permitir que el formulario se envíe normalmente a Formspree
+                    // No usar preventDefault() aquí para permitir el envío real
+                });
+            }
+            
+            // Script para el acordeón con mejoras de accesibilidad
+            const secciones = document.querySelectorAll('.seccion');
+            
+            secciones.forEach(seccion => {
+                const encabezado = seccion.querySelector('.encabezado');
+                const contenido = seccion.querySelector('.contenido');
+                
+                if (encabezado && contenido) {
+                    // Establecer atributos ARIA iniciales
+                    encabezado.setAttribute('aria-expanded', 'false');
+                    encabezado.setAttribute('aria-controls', contenido.id);
+                    
+                    encabezado.addEventListener('click', function() {
+                        const estaActiva = seccion.classList.contains('activa');
+                        
+                        // Cerrar todas las secciones primero
+                        secciones.forEach(s => {
+                            if (s !== seccion) {
+                                s.classList.remove('activa');
+                                const otroEncabezado = s.querySelector('.encabezado');
+                                const otroContenido = s.querySelector('.contenido');
+                                if (otroEncabezado) otroEncabezado.setAttribute('aria-expanded', 'false');
+                                if (otroContenido) otroContenido.setAttribute('aria-hidden', 'true');
+                            }
+                        });
+                        
+                        // Alternar la sección clickeada
+                        seccion.classList.toggle('activa');
+                        encabezado.setAttribute('aria-expanded', !estaActiva);
+                        contenido.setAttribute('aria-hidden', estaActiva);
+                        
+                        // Si se abre la sección, desplazar suavemente hacia ella
+                        if (seccion.classList.contains('activa')) {
+                            setTimeout(() => {
+                                seccion.scrollIntoView({ 
+                                    behavior: 'smooth', 
+                                    block: 'start' 
+                                });
+                            }, 350);
+                        }
+                    });
+                    
+                    // Mejora de accesibilidad: permitir operación con teclado
+                    encabezado.addEventListener('keydown', function(e) {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                            e.preventDefault();
+                            this.click();
+                        }
+                    });
+                }
+            });
+        });
+
+        // Función para mostrar confirmación
+        function mostrarConfirmacion() {
+            const formulario = document.getElementById('formularioDonacion');
+            const confirmacion = document.getElementById('confirmacionDonacion');
+            
+            if (formulario && confirmacion) {
+                formulario.style.display = 'none';
+                confirmacion.style.display = 'block';
+                
+                // Restablecer el botón de donación
+                const botonDonar = document.getElementById('botonDonar');
+                if (botonDonar) {
+                    botonDonar.classList.remove('btn-loading');
+                    botonDonar.disabled = false;
+                    botonDonar.innerHTML = '<i class="bi bi-heart-fill me-2" aria-hidden="true"></i>Realizar Donación';
+                    botonDonar.removeAttribute('aria-label');
+                }
+                
+                // Desplazarse suavemente a la confirmación
+                setTimeout(() => {
+                    confirmacion.scrollIntoView({ 
+                        behavior: 'smooth', 
+                        block: 'center' 
+                    });
+                }, 300);
+            }
+        }
+
+        // Función para ocultar confirmación
+        function ocultarConfirmacion() {
+            const formulario = document.getElementById('formularioDonacion');
+            const confirmacion = document.getElementById('confirmacionDonacion');
+            
+            if (formulario && confirmacion) {
+                formulario.style.display = 'block';
+                confirmacion.style.display = 'none';
+                
+                // Restablecer formulario
+                formulario.reset();
+                
+                // Restablecer selección de monto
+                document.querySelectorAll('.donacion-card').forEach(card => {
+                    card.classList.remove('active');
+                });
+                const cardPopular = document.querySelector('.donacion-card[data-monto="25"]');
+                if (cardPopular) {
+                    cardPopular.classList.add('active');
+                }
+                document.getElementById('montoFinal').value = 25;
+                
+                // Desplazarse al inicio del formulario
+                setTimeout(() => {
+                    formulario.scrollIntoView({ 
+                        behavior: 'smooth', 
+                        block: 'start' 
+                    });
+                }, 300);
+            }
+        }
+    </script>
+</body>
+</html>
